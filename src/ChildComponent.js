@@ -6,9 +6,7 @@ const ChildComponent = (props) =>{
   const ref = useRef()
 
   useEffect(()=>{
-
     ref.current = counter; 
-
   },[counter])
 
   const incrementCounter = () =>{
