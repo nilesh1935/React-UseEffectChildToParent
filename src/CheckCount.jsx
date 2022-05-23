@@ -12,10 +12,7 @@ const updateCount =(e)=>{
     setincCount(incCount+1)
     setCount(0)
   }
-  
-    
-  
-  
+ 
  }
   return(
     <>
