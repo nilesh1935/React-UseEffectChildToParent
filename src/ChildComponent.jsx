@@ -6,12 +6,14 @@ const ChildComponent = (props) =>{
   const ref = useRef()
 
   useEffect(()=>{
+    console.log("Called From Child",counter)
     ref.current = counter; 
     
   },[counter])
 
   const incrementCounter = () =>{
     setCounter(counter + 1);
+    console.log("from IncrementCounter", counter)
     props.incrementCounterFromChild(counter + 1);
     props.previousCounterValue(ref.current);
   }
