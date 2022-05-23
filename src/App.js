@@ -1,5 +1,6 @@
 import React,{useState} from "react";
-import ChildComponent from "./ChildComponent.js"
+import ChildComponent from "./ChildComponent.jsx"
+import CheckCount from "./CheckCount.jsx"
 import "./style.css";
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
   }
 
   const displayPreviousValue = (prevVal)=>{
+    console.log(prevVal)
     setPreviousValue(prevVal);
   }
 
@@ -19,6 +21,7 @@ export default function App() {
       <p>Now: {counter}</p>
       <p>Before: {previousValue}</p>
       <ChildComponent buttonName="increment" incrementCounterFromChild={displayCounter} previousCounterValue={displayPreviousValue} />
+      <CheckCount/>
     </div>
   );
 }

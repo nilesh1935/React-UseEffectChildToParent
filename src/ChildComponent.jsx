@@ -7,6 +7,7 @@ const ChildComponent = (props) =>{
 
   useEffect(()=>{
     ref.current = counter; 
+    console.log("from useEffect",ref.current)
   },[counter])
 
   const incrementCounter = () =>{
