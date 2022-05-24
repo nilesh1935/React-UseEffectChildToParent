@@ -7,12 +7,17 @@ const CheckCount = () =>{
  
 const updateCount =(e)=>{
   setCount(count+1)
-  setInputValue(e.target.value)
-  if(count === 2){
-    setincCount(incCount+1)
+  setInputValue(e.target.value )
+  if(e.target.value.length % 3 === 0 ){
     setCount(0)
+    setincCount(incCount+1)
   }
- 
+  if(e.target.value.length % 3 === 0 ){
+    if(incCount > 0){
+      setincCount(incCount-1)
+    }
+  }
+  
  }
   return(
     <>
