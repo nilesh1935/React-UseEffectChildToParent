@@ -21,7 +21,6 @@ const updateCount =(e)=>{
  }
   return(
     <>
-    <h1>{count}</h1>
     <h1>count: {incCount}</h1>
     <h1> Entered Text: {inputValue}</h1>
     <input type="text"  onChange={updateCount}/>
